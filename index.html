@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VERO Barbershop</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400&family=Inter:wght@400;500;600&family=Playfair+Display:wght@400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=3">
+<link rel="apple-touch-icon" sizes="180x180" href="VERO-logo.png">
+<link rel="icon" type="image/png" sizes="32x32" href="VERO-logo.png">
+<link rel="icon" type="image/png" sizes="16x16" href="VERO-logo.png">
+</head>
+<body>
+<div class="page">
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <img class="hero__photo" src="img/hero-photo.jpg" alt="">
+    <div class="hero__fade hero__fade--left"></div>
+    <div class="hero__fade hero__fade--top"></div>
+    <div class="hero__fade hero__fade--bottom"></div>
+
+    <header class="header">
+      <a class="logo" href="#home">
+        <span class="logo__name">VERO</span>
+        <span class="logo__sub">BARBERSHOP</span>
+      </a>
+      <nav class="nav">
+        <a href="#home">Главная</a>
+        <a href="#services">Услуги</a>
+        <a href="#barbers">Барберы</a>
+        <a href="#gallery">Галерея</a>
+        <a href="#about">О нас</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+      <div class="header__right">
+        <a class="phone" href="tel:+74951234567">
+          <img src="icons/phone-header.svg" alt="">
+          <span>+7 (495) 123-45-67</span>
+        </a>
+        <a class="btn-header" href="#booking">Записаться</a>
+        <div class="burger"><i></i><i></i><i></i></div>
+      </div>
+    </header>
+
+    <div class="hero__content">
+      <div class="hero__inner">
+        <p class="label hero__label">МУЖСКОЙ БАРБЕРШОП</p>
+        <h1 class="hero__h1">
+          <span class="hero__h1-line1">Стиль —</span>
+          <span class="hero__h1-line2">это <span class="accent">характер</span></span>
+        </h1>
+        <p class="hero__desc">Современные стрижки, уход и атмосфера,<br>в которой хочется возвращаться.</p>
+        <div class="hero__actions-wrap">
+          <div class="hero__actions">
+            <a class="btn-book" href="#booking">
+              <span>Записаться онлайн</span>
+              <img src="icons/arrow-dark.svg" alt="">
+            </a>
+            <div class="hero__divider"><i></i></div>
+            <a class="watch" href="#about">
+              <span class="watch__ring"><img src="icons/play.svg" alt=""></span>
+              <span class="watch__text">
+                <span class="watch__1">Посмотреть</span>
+                <span class="watch__2">о нас</span>
+                <span class="watch__3">2 мин</span>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOOKING -->
+  <section class="booking" id="booking">
+    <div class="widget">
+      <div class="widget__intro">
+        <p class="label">БЫСТРАЯ ЗАПИСЬ</p>
+        <h2 class="widget__h2">Выберите<br>услугу</h2>
+        <div class="widget__sub-wrap">
+          <p class="widget__sub">Всего несколько шагов —<br>и вы в надёжных руках.</p>
+        </div>
+      </div>
+
+      <div class="widget__area">
+        <div class="steps">
+          <div class="step step--1 is-first"><span class="step__ring">01</span><span class="step__label">Услуга</span></div>
+          <div class="step step--2"><span class="step__ring">02</span><span class="step__label">Барбер</span></div>
+          <div class="step step--3"><span class="step__ring">03</span><span class="step__label">Дата и время</span></div>
+          <div class="step step--4"><span class="step__ring">04</span><span class="step__label">Подтверждение</span></div>
+        </div>
+        <div class="steps-line"></div>
+
+        <div class="columns">
+          <!-- 1: service -->
+          <div class="block">
+            <div class="block__head">
+              <div class="steps"><div class="step step--1 is-first"><span class="step__ring">01</span><span class="step__label">Услуга</span></div></div>
+              <div class="steps-line"></div>
+            </div>
+            <div class="col col-service">
+              <p class="col__title">Выберите услугу</p>
+              <div class="service-list">
+                <div class="service-item is-selected">
+                  <span class="service-item__icon"><img src="icons/chair.svg" alt=""></span>
+                  <span class="service-item__text"><span class="service-item__name">Мужская стрижка</span><span class="service-item__price">от 2 500 ₽</span></span>
+                  <span class="service-item__check"><img src="icons/check-dark.svg" alt=""></span>
+                </div>
+                <div class="service-item">
+                  <span class="service-item__icon"><img src="icons/chair.svg" alt=""></span>
+                  <span class="service-item__text"><span class="service-item__name">Стрижка + борода</span><span class="service-item__price">от 4 000 ₽</span></span>
+                </div>
+                <div class="service-item">
+                  <span class="service-item__icon"><img src="icons/chair.svg" alt=""></span>
+                  <span class="service-item__text"><span class="service-item__name">Оформление бороды</span><span class="service-item__price">от 2 500 ₽</span></span>
+                </div>
+                <div class="service-item">
+                  <span class="service-item__icon"><img src="icons/chair.svg" alt=""></span>
+                  <span class="service-item__text"><span class="service-item__name">Камуфляж седины</span><span class="service-item__price">от 3 000 ₽</span></span>
+                </div>
+                <div class="service-item">
+                  <span class="service-item__icon"><img src="icons/chair.svg" alt=""></span>
+                  <span class="service-item__text"><span class="service-item__name">Комплекс (стрижка + борода)</span><span class="service-item__price">от 5 500 ₽</span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2: barber -->
+          <div class="block" id="barbers">
+            <div class="block__head">
+              <div class="steps"><div class="step step--2"><span class="step__ring">02</span><span class="step__label">Барбер</span></div></div>
+              <div class="steps-line"></div>
+            </div>
+            <div class="col col-barber">
+              <p class="col__title">Выберите барбера</p>
+              <div class="barber-list">
+                <div class="barber-item is-selected">
+                  <img class="barber-item__avatar" src="img/barber-avatar.svg" alt="">
+                  <span class="barber-item__text"><span class="barber-item__name">Александр К.</span><span class="rating"><img src="icons/star-gold.svg" alt=""><span>4.9</span></span></span>
+                  <img class="barber-item__check" src="icons/check-gold.svg" alt="">
+                </div>
+                <div class="barber-item">
+                  <img class="barber-item__avatar" src="img/barber-avatar (2).svg" alt="">
+                  <span class="barber-item__text"><span class="barber-item__name">Даниил С.</span><span class="rating"><img src="icons/star-gold.svg" alt=""><span>4.8</span></span></span>
+                </div>
+                <div class="barber-item">
+                  <img class="barber-item__avatar" src="img/barber-avatar (3).svg" alt="">
+                  <span class="barber-item__text"><span class="barber-item__name">Максим Д.</span><span class="rating"><img src="icons/star-gold.svg" alt=""><span>4.7</span></span></span>
+                </div>
+                <div class="barber-item">
+                  <img class="barber-item__avatar" src="img/barber-avatar (4).svg" alt="">
+                  <span class="barber-item__text"><span class="barber-item__name">Иван П.</span><span class="rating"><img src="icons/star-gold.svg" alt=""><span>4.6</span></span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3: date -->
+          <div class="block">
+            <div class="block__head">
+              <div class="steps"><div class="step step--3"><span class="step__ring">03</span><span class="step__label">Дата и время</span></div></div>
+              <div class="steps-line"></div>
+            </div>
+            <div class="col col-date">
+              <p class="col__title">Выберите дату и время</p>
+              <div class="calendar">
+                <div class="cal-header">
+                  <img src="icons/chev-left.svg" alt="">
+                  <span class="cal-month">Май 2025</span>
+                  <img src="icons/chev-right.svg" alt="">
+                </div>
+                <div class="weekdays">
+                  <span>Пн</span><span>Вт</span><span>Ср</span><span>Чт</span><span>Пт</span><span>Сб</span><span>Вс</span>
+                </div>
+                <div class="dates">
+                  <div class="week"><span class="day is-dim">28</span><span class="day is-dim">29</span><span class="day is-dim">30</span><span class="day">1</span><span class="day">2</span><span class="day">3</span><span class="day">4</span></div>
+                  <div class="week"><span class="day">5</span><span class="day">6</span><span class="day">7</span><span class="day">8</span><span class="day">9</span><span class="day">10</span><span class="day">11</span></div>
+                  <div class="week"><span class="day">12</span><span class="day">13</span><span class="day">14</span><span class="day">15</span><span class="day"><span class="day__selected">16</span></span><span class="day">17</span><span class="day">18</span></div>
+                  <div class="week"><span class="day">19</span><span class="day">20</span><span class="day">21</span><span class="day">22</span><span class="day">23</span><span class="day">24</span><span class="day">25</span></div>
+                </div>
+                <div class="time-slots">
+                  <div class="slot-row"><span class="time-slot">09:00</span><span class="time-slot">10:00</span><span class="time-slot">11:00</span></div>
+                  <div class="slot-row"><span class="time-slot">14:00</span><span class="time-slot is-selected">16:00</span><span class="time-slot">18:00</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4: summary -->
+          <div class="block">
+            <div class="block__head">
+              <div class="steps"><div class="step step--4"><span class="step__ring">04</span><span class="step__label">Подтверждение</span></div></div>
+              <div class="steps-line"></div>
+            </div>
+            <div class="summary">
+              <div class="summary__head">
+                <p class="summary__title">Ваша запись</p>
+                <div class="summary__divider"></div>
+              </div>
+              <div class="summary__fields">
+                <div class="field"><span class="field__label">Услуга</span><span class="field__value">Мужская стрижка</span></div>
+                <div class="field"><span class="field__label">Барбер</span><span class="field__value">Александр К.</span></div>
+                <div class="field"><span class="field__label">Дата</span><span class="field__value">16 мая 2025</span></div>
+                <div class="field"><span class="field__label">Время</span><span class="field__value">16:00</span></div>
+                <div class="field"><span class="field__label">Стоимость</span><span class="field__value">от 2 500 ₽</span></div>
+              </div>
+              <div class="summary__btn-wrap">
+                <a class="btn-confirm" href="#booking">Подтвердить запись</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services" id="services">
+    <div class="services__intro">
+      <p class="label">НАШИ УСЛУГИ</p>
+      <div class="services__h2-wrap">
+        <h2 class="services__h2">Больше, чем<br>просто стрижка</h2>
+        <p class="services__sub">Полный спектр услуг для вашего<br>стиля и уверенности.</p>
+      </div>
+      <div class="services__btn-gap">
+        <a class="btn-all" href="#services"><span>Все услуги</span><img src="icons/arrow-efe6da.svg" alt=""></a>
+      </div>
+    </div>
+    <div class="service-cards">
+      <a class="service-card" href="#booking">
+        <span class="service-card__photo"><img src="img/service-photo.svg" alt=""><i class="service-card__shade"></i></span>
+        <span class="service-card__info">
+          <span class="service-card__text"><span class="service-card__title">Мужские стрижки</span><span class="service-card__price">от 2 500 ₽</span></span>
+          <img src="icons/arrow-d8cdbf.svg" alt="">
+        </span>
+      </a>
+      <a class="service-card" href="#booking">
+        <span class="service-card__photo"><img src="img/service-photo (2).svg" alt=""><i class="service-card__shade"></i></span>
+        <span class="service-card__info">
+          <span class="service-card__text"><span class="service-card__title">Борода и усы</span><span class="service-card__price">от 2 500 ₽</span></span>
+          <img src="icons/arrow-d8cdbf.svg" alt="">
+        </span>
+      </a>
+      <a class="service-card" href="#booking">
+        <span class="service-card__photo"><img src="img/service-photo (3).svg" alt=""><i class="service-card__shade"></i></span>
+        <span class="service-card__info">
+          <span class="service-card__text"><span class="service-card__title">Камуфляж седины</span><span class="service-card__price">от 3 000 ₽</span></span>
+          <img src="icons/arrow-d8cdbf.svg" alt="">
+        </span>
+      </a>
+      <a class="service-card" href="#booking">
+        <span class="service-card__photo"><img src="img/service-photo (4).svg" alt=""><i class="service-card__shade"></i></span>
+        <span class="service-card__info">
+          <span class="service-card__text"><span class="service-card__title">Уход за кожей</span><span class="service-card__price">от 2 000 ₽</span></span>
+          <img src="icons/arrow-d8cdbf.svg" alt="">
+        </span>
+      </a>
+      <a class="service-card" href="#booking">
+        <span class="service-card__photo"><img src="img/service-photo (5).svg" alt=""><i class="service-card__shade"></i></span>
+        <span class="service-card__info">
+          <span class="service-card__text"><span class="service-card__title">Комплекс</span><span class="service-card__price">от 5 500 ₽</span></span>
+          <img src="icons/arrow-d8cdbf.svg" alt="">
+        </span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <i class="line line--top"></i>
+    <div class="about__photo-wrap">
+      <img class="about__photo" src="img/about-photo.svg" alt="">
+      <i class="about__fade"></i>
+    </div>
+    <div class="about__text-col">
+      <p class="label">О НАС</p>
+      <div class="about__h2-wrap">
+        <h2 class="about__h2">Больше, чем<br>барбершоп</h2>
+        <p class="about__text">VERO — это пространство, где стиль, качество<br>и внимание к деталям создают особую атмосферу.<br>Мы ценим ваше время, поэтому предлагаем<br>профессиональный сервис, индивидуальный подход<br>и безупречный результат.</p>
+      </div>
+      <div class="about__btn-gap">
+        <a class="btn-more" href="#about"><span>Узнать больше</span><img src="icons/arrow-d9b68c.svg" alt=""></a>
+      </div>
+    </div>
+    <div class="about__divider-wrap"><i></i></div>
+    <div class="features">
+      <div class="feature">
+        <span class="feature__ring"><img src="icons/user.svg" alt=""></span>
+        <span class="feature__text">
+          <span class="feature__title">Опытные барберы</span>
+          <span class="feature__sub">с международной практикой</span>
+          <span class="feature__sep-wrap"><i></i></span>
+        </span>
+      </div>
+      <div class="feature">
+        <span class="feature__ring"><img src="icons/bag.svg" alt=""></span>
+        <span class="feature__text">
+          <span class="feature__title">Премиальные материалы</span>
+          <span class="feature__sub">и профессиональная косметика</span>
+          <span class="feature__sep-wrap"><i></i></span>
+        </span>
+      </div>
+      <div class="feature">
+        <span class="feature__ring"><img src="icons/heart.svg" alt=""></span>
+        <span class="feature__text">
+          <span class="feature__title">Уютная атмосфера</span>
+          <span class="feature__sub">и комфортная зона ожидания</span>
+          <span class="feature__sep-wrap"><i></i></span>
+        </span>
+      </div>
+      <div class="feature feature--last">
+        <span class="feature__ring"><img src="icons/clip.svg" alt=""></span>
+        <span class="feature__text">
+          <span class="feature__title">Удобная онлайн-запись</span>
+          <span class="feature__sub">и гибкий график</span>
+          <span class="feature__sep-wrap"><i></i></span>
+        </span>
+      </div>
+    </div>
+    <i class="line line--bottom"></i>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="gallery" id="gallery">
+    <i class="line line--top"></i>
+    <div class="gallery__intro">
+      <p class="label">ГАЛЕРЕЯ</p>
+      <div class="gallery__h2-wrap">
+        <h2 class="gallery__h2">Наши работы</h2>
+        <p class="gallery__sub">Реальные примеры, настоящие<br>люди, стильные образы.</p>
+      </div>
+      <div class="gallery__link-gap">
+        <a class="gallery__link-row" href="#gallery"><span>Смотреть все работы</span><img src="icons/arrow-d0a878.svg" alt=""></a>
+      </div>
+    </div>
+    <div class="gallery__photos">
+      <div class="gallery-photo"><img src="img/photo.svg" alt=""></div>
+      <div class="gallery-photo"><img src="img/photo (2).svg" alt=""></div>
+      <div class="gallery-photo"><img src="img/photo (3).svg" alt=""></div>
+      <div class="gallery-photo"><img src="img/photo (4).svg" alt=""></div>
+      <div class="gallery-photo"><img src="img/photo (5).svg" alt=""></div>
+    </div>
+    <div class="gallery__nav">
+      <img src="icons/nav-left-gold.svg" alt="">
+      <img src="icons/nav-right-gold.svg" alt="">
+    </div>
+    <i class="line line--bottom"></i>
+  </section>
+
+  <!-- REVIEWS -->
+  <section class="reviews" id="reviews">
+    <div class="reviews__intro">
+      <p class="label">ОТЗЫВЫ</p>
+      <h2 class="reviews__h2">Что говорят<br>наши клиенты</h2>
+    </div>
+    <div class="review-cards">
+      <div class="review-card">
+        <img class="review-card__avatar" src="img/reviewer-avatar.svg" alt="">
+        <div class="review-card__body">
+          <p class="review-card__name">Артём К.</p>
+          <div class="rating rating--light"><img src="icons/star-light.svg" alt=""><span>5.0</span></div>
+          <div class="review-card__text-gap"><p class="review-card__text">“Отличный сервис, профессиональные<br>мастера и приятная атмосфера.<br>Теперь только сюда!”</p></div>
+        </div>
+      </div>
+      <div class="review-card">
+        <img class="review-card__avatar" src="img/reviewer-avatar (2).svg" alt="">
+        <div class="review-card__body">
+          <p class="review-card__name">Денис П.</p>
+          <div class="rating rating--light"><img src="icons/star-light.svg" alt=""><span>4.9</span></div>
+          <div class="review-card__text-gap"><p class="review-card__text">“Делал стрижку и оформление бороды.<br>Результат превзошёл ожидания.<br>Всё на высшем уровне!”</p></div>
+        </div>
+      </div>
+      <div class="review-card">
+        <img class="review-card__avatar" src="img/reviewer-avatar (3).svg" alt="">
+        <div class="review-card__body">
+          <p class="review-card__name">Игорь С.</p>
+          <div class="rating rating--light"><img src="icons/star-light.svg" alt=""><span>5.0</span></div>
+          <div class="review-card__text-gap"><p class="review-card__text">“Лучший барбершоп в городе.<br>Внимание к деталям, сервис<br>и приятная атмосфера.”</p></div>
+        </div>
+      </div>
+    </div>
+    <div class="reviews__nav">
+      <img src="icons/nav-left-gray.svg" alt="">
+      <img src="icons/nav-right-gray.svg" alt="">
+    </div>
+    <i class="line line--bottom"></i>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer" id="contacts">
+    <div class="footer__top">
+      <div class="footer__logo">
+        <span class="footer__logo-name">VERO</span>
+        <span class="footer__logo-sub">BARBERSHOP</span>
+        <div class="socials">
+          <img src="icons/insta.svg" alt="">
+          <span class="socials__vk">VK</span>
+          <img src="icons/tg.svg" alt="">
+        </div>
+      </div>
+      <div class="footer__nav">
+        <p class="footer__title">Навигация</p>
+        <div class="footer__links">
+          <div class="footer__links-a"><a href="#home">Главная</a><a href="#services">Услуги</a><a href="#barbers">Барберы</a></div>
+          <div class="footer__links-b"><a href="#gallery">Галерея</a><a href="#about">О нас</a><a href="#contacts">Контакты</a></div>
+        </div>
+      </div>
+      <div class="footer__contacts">
+        <p class="footer__title">Контакты</p>
+        <div class="contact-rows">
+          <div class="contact-row"><img src="icons/phone-footer.svg" alt=""><span>+7 (495) 123-45-67</span></div>
+          <div class="contact-row"><img src="icons/mail.svg" alt=""><span>hello@vero-barbershop.ru</span></div>
+          <div class="contact-row"><img src="icons/pin.svg" alt=""><span>Москва, ул. Лесная, 7</span></div>
+        </div>
+      </div>
+      <div class="footer__hours">
+        <p class="footer__title">Часы работы</p>
+        <div class="hours-rows">
+          <p>Пн–Пт: 10:00 – 22:00</p>
+          <p>Сб–Вс: 10:00 – 21:00</p>
+        </div>
+      </div>
+      <div class="footer__btn-wrap">
+        <a class="btn-footer" href="#booking">Записаться</a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <i class="footer__line"></i>
+      <div class="footer__bottom-row">
+        <p class="copyright">© 2025 VERO Barbershop. Все права защищены.</p>
+        <div class="legal">
+          <a href="#">Политика конфиденциальности</a>
+          <span class="legal__sep"><i></i></span>
+          <a href="#">Пользовательское соглашение</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</div>
+</body>
+</html>
